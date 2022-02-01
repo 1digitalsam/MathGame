@@ -104,7 +104,36 @@ Next, we have to commit the files:
 ```
 git commit -m "firstcommit"
 ```
-And BAM! Run another git status to make sure everything is Gucci!
+Once that is completed, you should receive an ouput similar to this: 
+```
+[main (root-commit) a474f39] firstcommit
+ 3 files changed, 235 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 README.md
+ create mode 100644 mathgame.js
+```
+Next, enter this command: 
+```
+git remote add origin <link to your github repo>
+```
+Now, its time to Push:
+```
+git push -u origin main
+```
+Next, it will ask for your github username and password. Github no longer uses passwords for commits, so you have to generate an access code from your github profile. *MAKE SURE THE REPO BOX IS CHECKED WHEN GENERATING AN ACCESS CODE*
+If done correctly, you should receive a similar output
+```
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 4.23 KiB | 4.23 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/1digitalsam/MathGame.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+```
+Last, but not least, run a git status. and BAM! Thats it!
 * Don't a sweaty programmer, Have Fun!
   * I found myself getting fustrated when I couldn't figure out why something wasn't working the way I wanted it to. I took lots of breaks, played some PS5, and searched around StackOverflow, but DON'T GIVE UP! 
 
